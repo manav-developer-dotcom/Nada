@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNKNOWN | Luxury Ayurvedic Bioactive Skincare</title>
+<meta name="description" content="UNKNOWN - Luxury skincare powered by A2 Bilona Ghee & Prickly Pear Cactus. Ancient Ayurvedic wisdom meets modern biotechnology.">
+<meta name="keywords" content="luxury skincare, Ayurvedic skincare, organic cosmetics, A2 Bilona Ghee, Prickly Pear Cactus, clean beauty, sustainable skincare">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #FAF7F2; --ivory: #F5F0E8; --sand: #E8DFD0; --warm-white: #FFFCF8;
+  --olive: #4A5D3F; --olive-light: #6B7F5E; --olive-dark: #2F3D28;
+  --gold: #C4A35A; --gold-light: #D4B76A; --gold-dark: #A68B4B;
+  --charcoal: #1A1A1A; --dark: #0F0F0F;
+  --text-primary: #2C2C2C; --text-secondary: #6B6B6B; --text-muted: #9B9B9B;
+  --glass: rgba(255, 252, 248, 0.08); --glass-border: rgba(255, 252, 248, 0.15);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--cream); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; font-weight: 300; letter-spacing: -0.02em; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--dark); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(196, 163, 90, 0.2); } 50% { box-shadow: 0 0 40px rgba(196, 163, 90, 0.4); } }
+@keyframes shimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
+
+.animate-on-scroll { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+.animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+.delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; } .delay-3 { transition-delay: 0.3s; } .delay-4 { transition-delay: 0.4s; }
+
+/* Navigation */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 20px 48px; display: flex; justify-content: space-between; align-items: center; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+.nav.scrolled { background: rgba(15, 15, 15, 0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 16px 48px; border-bottom: 1px solid var(--glass-border); }
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 300; letter-spacing: 8px; color: var(--cream); text-decoration: none; transition: color 0.3s; cursor: pointer; }
+.nav-logo:hover { color: var(--gold); }
+.nav-links { display: flex; gap: 40px; list-style: none; }
+.nav-links a { color: var(--cream); text-decoration: none; font-size: 12px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; position: relative; padding: 4px 0; transition: color 0.3s; cursor: pointer; }
+.nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: var(--gold); transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.nav-actions { display: flex; gap: 24px; align-items: center; }
+.nav-icon { color: var(--cream); cursor: pointer; transition: color 0.3s, transform 0.3s; position: relative; }
+.nav-icon:hover { color: var(--gold); transform: scale(1.1); }
+.cart-count { position: absolute; top: -8px; right: -8px; background: var(--gold); color: var(--dark); font-size: 10px; font-weight: 600; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+
+/* Hero */
+.hero { position: relative; height: 100vh; min-height: 700px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #1a1510 0%, #0f0f0f 50%, #1a1815 100%); }
+.hero-bg::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(196, 163, 90, 0.08) 0%, transparent 50%), radial-gradient(ellipse at 70% 30%, rgba(74, 93, 63, 0.1) 0%, transparent 50%); }
+.hero-particles { position: absolute; inset: 0; overflow: hidden; }
+.particle { position: absolute; width: 2px; height: 2px; background: var(--gold); border-radius: 50%; opacity: 0.3; animation: float 6s ease-in-out infinite; }
+.hero-content { position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 0 24px; }
+.hero-badge { display: inline-block; padding: 8px 24px; border: 1px solid var(--gold); color: var(--gold); font-size: 11px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 40px; background: rgba(196, 163, 90, 0.05); animation: fadeInUp 1s ease-out; }
+.hero-title { font-size: clamp(48px, 8vw, 96px); font-weight: 300; line-height: 1.05; margin-bottom: 24px; animation: fadeInUp 1s ease-out 0.2s both; background: linear-gradient(135deg, var(--cream) 0%, var(--sand) 50%, var(--gold) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-subtitle { font-size: clamp(16px, 2vw, 20px); font-weight: 300; color: var(--text-muted); line-height: 1.6; margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto; animation: fadeInUp 1s ease-out 0.4s both; }
+.hero-cta { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; animation: fadeInUp 1s ease-out 0.6s both; }
+.btn { padding: 16px 40px; font-size: 12px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; border-radius: 0; cursor: pointer; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); position: relative; overflow: hidden; display: inline-block; border: none; font-family: 'Inter', sans-serif; }
+.btn-primary { background: var(--gold); color: var(--dark); border: 1px solid var(--gold); }
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 10px 40px rgba(196, 163, 90, 0.3); }
+.btn-secondary { background: transparent; color: var(--cream); border: 1px solid rgba(255, 252, 248, 0.3); }
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+.hero-scroll { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 12px; animation: fadeIn 1s ease-out 1.2s both; }
+.hero-scroll span { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-muted); }
+.scroll-line { width: 1px; height: 60px; background: linear-gradient(to bottom, var(--gold), transparent); animation: shimmer 2s linear infinite; }
+
+/* Section Styles */
+.section { padding: 120px 48px; position: relative; }
+.section-header { text-align: center; margin-bottom: 80px; }
+.section-label { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; display: block; }
+.section-title { font-size: clamp(36px, 5vw, 56px); font-weight: 300; color: var(--cream); margin-bottom: 20px; }
+.section-subtitle { font-size: 16px; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.7; font-weight: 300; }
+
+/* Products Grid */
+.products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; max-width: 1400px; margin: 0 auto; }
+.product-card { background: rgba(255, 252, 248, 0.03); border: 1px solid var(--glass-border); padding: 0; overflow: hidden; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; position: relative; }
+.product-card:hover { transform: translateY(-8px); border-color: rgba(196, 163, 90, 0.3); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); }
+.product-image { aspect-ratio: 3/4; background: linear-gradient(135deg, #1a1815 0%, #2a2520 50%, #1a1815 100%); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.product-image::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(196, 163, 90, 0.1) 0%, transparent 70%); }
+.product-image svg { width: 60%; height: 60%; opacity: 0.6; transition: all 0.5s; }
+.product-card:hover .product-image svg { transform: scale(1.05); opacity: 0.8; }
+.product-badge { position: absolute; top: 16px; left: 16px; background: var(--olive); color: var(--cream); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 6px 12px; }
+.product-wishlist { position: absolute; top: 16px; right: 16px; width: 36px; height: 36px; border-radius: 50%; background: rgba(15, 15, 15, 0.6); backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s; border: 1px solid var(--glass-border); }
+.product-wishlist:hover { background: var(--gold); border-color: var(--gold); }
+.product-wishlist:hover svg { stroke: var(--dark); }
+.product-info { padding: 28px; }
+.product-category { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.product-name { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: var(--cream); margin-bottom: 8px; }
+.product-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px; }
+.product-footer { display: flex; justify-content: space-between; align-items: center; }
+.product-price { font-size: 18px; font-weight: 500; color: var(--cream); }
+.product-price .original { font-size: 14px; color: var(--text-muted); text-decoration: line-through; margin-left: 8px; }
+.add-to-cart { width: 40px; height: 40px; background: var(--gold); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+.add-to-cart:hover { background: var(--gold-light); transform: scale(1.1); }
+
+/* Ingredients */
+.ingredients-section { background: linear-gradient(180deg, var(--dark) 0%, #121210 100%); }
+.ingredients-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 24px; max-width: 1400px; margin: 0 auto; }
+.ingredient-card { background: rgba(255, 252, 248, 0.02); border: 1px solid var(--glass-border); padding: 40px; position: relative; overflow: hidden; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; }
+.ingredient-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--gold); transition: height 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+.ingredient-card:hover::before { height: 100%; }
+.ingredient-card:hover { background: rgba(255, 252, 248, 0.04); border-color: rgba(196, 163, 90, 0.2); transform: translateY(-4px); }
+.ingredient-icon { width: 56px; height: 56px; background: rgba(196, 163, 90, 0.1); border: 1px solid rgba(196, 163, 90, 0.2); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; transition: all 0.4s; }
+.ingredient-card:hover .ingredient-icon { background: rgba(196, 163, 90, 0.2); transform: rotate(5deg) scale(1.1); }
+.ingredient-name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; color: var(--cream); margin-bottom: 8px; }
+.ingredient-sanskrit { font-size: 12px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
+.ingredient-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; }
+.ingredient-benefits { display: flex; flex-wrap: wrap; gap: 8px; }
+.benefit-tag { padding: 4px 12px; background: rgba(74, 93, 63, 0.2); border: 1px solid rgba(74, 93, 63, 0.3); font-size: 11px; color: var(--olive-light); letter-spacing: 1px; }
+
+/* Why UNKNOWN */
+.why-section { background: var(--dark); }
+.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0; max-width: 1200px; margin: 0 auto; border: 1px solid var(--glass-border); }
+.why-item { padding: 60px 40px; text-align: center; border-right: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); transition: all 0.4s; position: relative; overflow: hidden; }
+.why-item:nth-child(3n) { border-right: none; }
+.why-item::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(196, 163, 90, 0.05) 0%, transparent 70%); opacity: 0; transition: opacity 0.4s; }
+.why-item:hover::after { opacity: 1; }
+.why-item:hover { background: rgba(255, 252, 248, 0.02); }
+.why-icon { width: 64px; height: 64px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; }
+.why-icon svg { stroke: var(--gold); transition: transform 0.4s; }
+.why-item:hover .why-icon svg { transform: scale(1.1); }
+.why-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; color: var(--cream); margin-bottom: 12px; position: relative; z-index: 1; }
+.why-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; position: relative; z-index: 1; }
+
+/* Before/After */
+.before-after-section { background: linear-gradient(180deg, #121210 0%, var(--dark) 100%); padding: 120px 48px; }
+.ba-container { max-width: 1000px; margin: 0 auto; position: relative; }
+.ba-slider { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; border: 1px solid var(--glass-border); }
+.ba-image { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--text-muted); }
+.ba-before { background: linear-gradient(135deg, #2a2520 0%, #1a1815 100%); width: 100%; }
+.ba-after { background: linear-gradient(135deg, #1a1815 0%, #2a2820 100%); width: 50%; border-right: 2px solid var(--gold); overflow: hidden; }
+.ba-handle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 48px; height: 48px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: ew-resize; z-index: 10; box-shadow: 0 0 30px rgba(196, 163, 90, 0.4); animation: pulse-glow 3s ease-in-out infinite; }
+.ba-labels { display: flex; justify-content: space-between; margin-top: 20px; padding: 0 20px; }
+.ba-label { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-muted); }
+.ba-label span { color: var(--gold); display: block; font-family: 'Cormorant Garamond', serif; font-size: 20px; margin-top: 4px; }
+
+/* Philosophy */
+.philosophy-section { background: var(--dark); position: relative; overflow: hidden; }
+.philosophy-section::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(196, 163, 90, 0.03) 0%, transparent 70%); pointer-events: none; }
+.philosophy-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.philosophy-text { position: relative; z-index: 1; }
+.philosophy-text .section-label { text-align: left; }
+.philosophy-text .section-title { text-align: left; margin-bottom: 32px; }
+.philosophy-para { font-size: 16px; line-height: 1.9; color: var(--text-muted); margin-bottom: 24px; font-weight: 300; }
+.philosophy-quote { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-style: italic; color: var(--gold); line-height: 1.5; margin-top: 40px; padding-left: 24px; border-left: 2px solid var(--gold); }
+.philosophy-visual { position: relative; aspect-ratio: 3/4; background: linear-gradient(135deg, #1a1815 0%, #2a2520 50%, #1a1815 100%); overflow: hidden; }
+.philosophy-visual::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(196, 163, 90, 0.08) 0%, transparent 60%); }
+.philosophy-visual::after { content: ''; position: absolute; inset: 40px; border: 1px solid rgba(196, 163, 90, 0.15); }
+
+/* Reviews */
+.reviews-section { background: linear-gradient(180deg, var(--dark) 0%, #121210 100%); }
+.reviews-carousel { max-width: 1000px; margin: 0 auto; position: relative; }
+.review-card { background: rgba(255, 252, 248, 0.03); border: 1px solid var(--glass-border); padding: 48px; text-align: center; max-width: 700px; margin: 0 auto; position: relative; }
+.review-card::before { content: '"'; font-family: 'Cormorant Garamond', serif; font-size: 120px; color: rgba(196, 163, 90, 0.1); position: absolute; top: -20px; left: 24px; line-height: 1; }
+.review-stars { display: flex; gap: 4px; justify-content: center; margin-bottom: 24px; }
+.review-stars svg { fill: var(--gold); }
+.review-text { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-style: italic; color: var(--cream); line-height: 1.6; margin-bottom: 32px; position: relative; z-index: 1; }
+.review-author { font-size: 14px; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; }
+.review-author span { color: var(--gold); display: block; font-family: 'Cormorant Garamond', serif; font-size: 20px; text-transform: none; letter-spacing: 0; margin-top: 4px; }
+.review-nav { display: flex; justify-content: center; gap: 16px; margin-top: 40px; }
+.review-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--glass-border); cursor: pointer; transition: all 0.3s; border: none; }
+.review-dot.active { background: var(--gold); transform: scale(1.3); }
+
+/* Sustainability */
+.sustainability-section { background: var(--dark); }
+.sustain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 32px; max-width: 1200px; margin: 0 auto; }
+.sustain-card { padding: 48px; border: 1px solid var(--glass-border); background: rgba(255, 252, 248, 0.02); transition: all 0.4s; position: relative; overflow: hidden; }
+.sustain-card:hover { border-color: rgba(74, 93, 63, 0.4); background: rgba(74, 93, 63, 0.05); }
+.sustain-number { font-family: 'Cormorant Garamond', serif; font-size: 64px; font-weight: 300; color: rgba(196, 163, 90, 0.15); line-height: 1; margin-bottom: 16px; }
+.sustain-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--cream); margin-bottom: 16px; }
+.sustain-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+
+/* Featured In */
+.featured-section { background: linear-gradient(180deg, #121210 0%, var(--dark) 100%); padding: 80px 48px; }
+.featured-logos { display: flex; justify-content: center; align-items: center; gap: 60px; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; opacity: 0.4; }
+.featured-logo { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; letter-spacing: 4px; color: var(--cream); transition: opacity 0.3s; }
+.featured-logo:hover { opacity: 1; }
+
+/* Newsletter */
+.newsletter-section { background: var(--dark); position: relative; overflow: hidden; }
+.newsletter-section::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(196, 163, 90, 0.03) 0%, transparent 60%); pointer-events: none; }
+.newsletter-content { max-width: 600px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+.newsletter-form { display: flex; gap: 0; margin-top: 40px; border: 1px solid var(--glass-border); }
+.newsletter-input { flex: 1; padding: 18px 24px; background: rgba(255, 252, 248, 0.03); border: none; color: var(--cream); font-size: 14px; letter-spacing: 1px; outline: none; transition: background 0.3s; }
+.newsletter-input::placeholder { color: var(--text-muted); }
+.newsletter-input:focus { background: rgba(255, 252, 248, 0.06); }
+.newsletter-btn { padding: 18px 32px; background: var(--gold); border: none; color: var(--dark); font-size: 12px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all 0.3s; }
+.newsletter-btn:hover { background: var(--gold-light); padding: 18px 40px; }
+
+/* Instagram */
+.instagram-section { background: var(--dark); padding: 80px 0; }
+.insta-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; }
+.insta-item { aspect-ratio: 1; background: linear-gradient(135deg, #1a1815 0%, #2a2520 100%); position: relative; overflow: hidden; cursor: pointer; }
+.insta-item::before { content: ''; position: absolute; inset: 0; background: rgba(15, 15, 15, 0.5); opacity: 0; transition: opacity 0.4s; z-index: 1; }
+.insta-item:hover::before { opacity: 1; }
+.insta-item::after { content: '♡'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); color: var(--cream); font-size: 24px; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); z-index: 2; }
+.insta-item:hover::after { transform: translate(-50%, -50%) scale(1); }
+
+/* Footer */
+.footer { background: #0a0a0a; border-top: 1px solid var(--glass-border); padding: 80px 48px 40px; }
+.footer-grid { display: grid; grid-template-columns: 2fr repeat(4, 1fr); gap: 48px; max-width: 1400px; margin: 0 auto 60px; }
+.footer-brand { max-width: 300px; }
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 300; letter-spacing: 8px; color: var(--cream); margin-bottom: 20px; display: block; }
+.footer-tagline { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 24px; }
+.footer-social { display: flex; gap: 16px; }
+.footer-social a { width: 40px; height: 40px; border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center; color: var(--text-muted); text-decoration: none; transition: all 0.3s; font-size: 14px; cursor: pointer; }
+.footer-social a:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+.footer-col h4 { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--cream); margin-bottom: 24px; font-family: 'Inter', sans-serif; font-weight: 500; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 12px; }
+.footer-col a { color: var(--text-muted); text-decoration: none; font-size: 14px; transition: color 0.3s; cursor: pointer; }
+.footer-col a:hover { color: var(--gold); }
+.footer-bottom { border-top: 1px solid var(--glass-border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; }
+.footer-bottom p { font-size: 12px; color: var(--text-muted); letter-spacing: 1px; }
+
+/* Shop Page */
+.shop-page { padding-top: 100px; min-height: 100vh; }
+.shop-header { padding: 60px 48px; text-align: center; background: linear-gradient(180deg, #121210 0%, var(--dark) 100%); }
+.shop-filters { display: flex; justify-content: center; gap: 16px; margin-top: 32px; flex-wrap: wrap; }
+.filter-btn { padding: 10px 24px; background: transparent; border: 1px solid var(--glass-border); color: var(--text-muted); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all 0.3s; }
+.filter-btn:hover, .filter-btn.active { border-color: var(--gold); color: var(--gold); background: rgba(196, 163, 90, 0.05); }
+.shop-grid { padding: 60px 48px; max-width: 1400px; margin: 0 auto; }
+
+/* Product Detail */
+.product-detail { padding-top: 100px; min-height: 100vh; }
+.pd-container { max-width: 1200px; margin: 0 auto; padding: 60px 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+.pd-gallery { aspect-ratio: 3/4; background: linear-gradient(135deg, #1a1815 0%, #2a2520 50%, #1a1815 100%); position: relative; overflow: hidden; border: 1px solid var(--glass-border); }
+.pd-gallery::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(196, 163, 90, 0.08) 0%, transparent 60%); }
+.pd-info h1 { font-size: 42px; margin-bottom: 8px; }
+.pd-price { font-size: 28px; color: var(--gold); margin-bottom: 24px; font-weight: 500; }
+.pd-desc { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 32px; }
+.pd-options { margin-bottom: 32px; }
+.pd-option-label { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; display: block; }
+.pd-size-options { display: flex; gap: 12px; }
+.pd-size { padding: 12px 24px; border: 1px solid var(--glass-border); background: transparent; color: var(--cream); font-size: 13px; cursor: pointer; transition: all 0.3s; }
+.pd-size:hover, .pd-size.active { border-color: var(--gold); background: rgba(196, 163, 90, 0.1); }
+.pd-actions { display: flex; gap: 16px; margin-bottom: 40px; }
+.pd-qty { display: flex; align-items: center; border: 1px solid var(--glass-border); }
+.pd-qty button { width: 48px; height: 48px; background: transparent; border: none; color: var(--cream); font-size: 18px; cursor: pointer; transition: color 0.3s; }
+.pd-qty button:hover { color: var(--gold); }
+.pd-qty span { width: 48px; text-align: center; font-size: 14px; }
+.pd-add-cart { flex: 1; padding: 16px; background: var(--gold); border: none; color: var(--dark); font-size: 12px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; cursor: pointer; transition: all 0.3s; }
+.pd-add-cart:hover { background: var(--gold-light); box-shadow: 0 10px 40px rgba(196, 163, 90, 0.3); }
+.pd-wishlist { width: 56px; height: 56px; border: 1px solid var(--glass-border); background: transparent; color: var(--cream); cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; }
+.pd-wishlist:hover { border-color: var(--gold); color: var(--gold); }
+.pd-tabs { border-top: 1px solid var(--glass-border); padding-top: 32px; }
+.pd-tab-nav { display: flex; gap: 32px; margin-bottom: 24px; }
+.pd-tab-btn { background: none; border: none; color: var(--text-muted); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; padding: 8px 0; position: relative; transition: color 0.3s; }
+.pd-tab-btn.active { color: var(--cream); }
+.pd-tab-btn::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: var(--gold); transition: width 0.3s; }
+.pd-tab-btn.active::after { width: 100%; }
+.pd-tab-content { font-size: 14px; color: var(--text-muted); line-height: 1.8; }
+.pd-tab-content ul { list-style: none; padding: 0; }
+.pd-tab-content li { padding: 8px 0; padding-left: 20px; position: relative; }
+.pd-tab-content li::before { content: '—'; position: absolute; left: 0; color: var(--gold); }
+
+/* About Page */
+.about-hero { padding-top: 100px; min-height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(180deg, #121210 0%, var(--dark) 100%); }
+.about-hero h1 { font-size: clamp(40px, 6vw, 72px); margin-bottom: 24px; }
+.about-hero p { font-size: 18px; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+.about-story { max-width: 900px; margin: 0 auto; padding: 100px 48px; }
+.about-story p { font-size: 18px; line-height: 2; color: var(--text-muted); margin-bottom: 32px; font-weight: 300; }
+.about-story h3 { font-size: 32px; color: var(--cream); margin: 60px 0 24px; }
+
+/* Ingredients Page */
+.ingredients-page { padding-top: 100px; min-height: 100vh; }
+.ingredients-hero { padding: 80px 48px; text-align: center; background: linear-gradient(180deg, #121210 0%, var(--dark) 100%); }
+.ingredients-hero h1 { font-size: clamp(40px, 6vw, 72px); margin-bottom: 20px; }
+.ingredients-hero p { font-size: 16px; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+.ingredients-detail { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
+.ingredient-detail-card { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; padding: 48px; border: 1px solid var(--glass-border); background: rgba(255, 252, 248, 0.02); }
+.ingredient-detail-card:nth-child(even) { direction: rtl; }
+.ingredient-detail-card:nth-child(even) > * { direction: ltr; }
+.ingredient-detail-visual { aspect-ratio: 4/3; background: linear-gradient(135deg, #1a1815 0%, #2a2520 100%); position: relative; overflow: hidden; }
+.ingredient-detail-visual::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(196, 163, 90, 0.08) 0%, transparent 60%); }
+.ingredient-detail-info h3 { font-size: 36px; margin-bottom: 8px; }
+.ingredient-detail-info .sanskrit { font-size: 14px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 24px; display: block; }
+.ingredient-detail-info p { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 24px; }
+.ingredient-detail-info h4 { font-size: 14px; letter-spacing: 2px; text-transform: uppercase; color: var(--cream); margin-bottom: 12px; font-family: 'Inter', sans-serif; }
+.ingredient-detail-info ul { list-style: none; margin-bottom: 24px; }
+.ingredient-detail-info li { padding: 6px 0; padding-left: 20px; position: relative; font-size: 14px; color: var(--text-muted); }
+.ingredient-detail-info li::before { content: '—'; position: absolute; left: 0; color: var(--gold); }
+
+/* Sustainability Page */
+.sustainability-page { padding-top: 100px; min-height: 100vh; }
+.sustain-hero { padding: 80px 48px; text-align: center; background: linear-gradient(180deg, #121210 0%, var(--dark) 100%); }
+.sustain-hero h1 { font-size: clamp(40px, 6vw, 72px); margin-bottom: 20px; }
+.sustain-hero p { font-size: 16px; color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+.sustain-content { padding: 80px 48px; max-width: 1000px; margin: 0 auto; }
+.sustain-block { margin-bottom: 80px; }
+.sustain-block h3 { font-size: 32px; margin-bottom: 24px; }
+.sustain-block p { font-size: 16px; color: var(--text-muted); line-height: 1.9; margin-bottom: 16px; }
+
+/* Journal Page */
+.journal-page { padding-top: 100px; min-height: 100vh; }
+.journal-hero { padding: 80px 48px; text-align: center; background: linear-gradient(180deg, #121210 0%, var(--dark) 100%); }
+.journal-hero h1 { font-size: clamp(40px, 6vw, 72px); margin-bottom: 20px; }
+.journal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 32px; max-width: 1200px; margin: 0 auto; padding: 60px 48px; }
+.journal-card { border: 1px solid var(--glass-border); overflow: hidden; cursor: pointer; transition: all 0.4s; }
+.journal-card:hover { transform: translateY(-4px); border-color: rgba(196, 163, 90, 0.3); }
+.journal-card-img { aspect-ratio: 16/10; background: linear-gradient(135deg, #1a1815 0%, #2a2520 100%); position: relative; }
+.journal-card-img::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(196, 163, 90, 0.06) 0%, transparent 60%); }
+.journal-card-content { padding: 32px; }
+.journal-card-tag { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+.journal-card-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--cream); margin-bottom: 12px; line-height: 1.3; }
+.journal-card-excerpt { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px; }
+.journal-card-date { font-size: 12px; color: var(--text-muted); letter-spacing: 1px; }
+
+/* Contact Page */
+.contact-page { padding-top: 100px; min-height: 100vh; }
+.contact-hero { padding: 80px 48px; text-align: center; background: linear-gradient(180deg, #121210 0%, var(--dark) 100%); }
+.contact-hero h1 { font-size: clamp(40px, 6vw, 72px); margin-bottom: 20px; }
+.contact-hero p { font-size: 16px; color: var(--text-muted); max-width: 500px; margin: 0 auto; line-height: 1.7; }
+.contact-form { max-width: 600px; margin: 0 auto; padding: 60px 48px; }
+.form-group { margin-bottom: 32px; }
+.form-group label { display: block; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; }
+.form-group input, .form-group textarea { width: 100%; padding: 16px 0; background: transparent; border: none; border-bottom: 1px solid var(--glass-border); color: var(--cream); font-size: 16px; font-family: 'Inter', sans-serif; outline: none; transition: border-color 0.3s; }
+.form-group input:focus, .form-group textarea:focus { border-bottom-color: var(--gold); }
+.form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-muted); opacity: 0.5; }
+.form-group textarea { min-height: 120px; resize: vertical; }
+.contact-form .btn-primary { width: 100%; padding: 18px; }
+.contact-info { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 900px; margin: 0 auto; padding: 0 48px 80px; text-align: center; }
+.contact-info-item h4 { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; font-family: 'Inter', sans-serif; }
+.contact-info-item p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+/* FAQ Page */
+.faq-page { padding-top: 100px; min-height: 100vh; }
+.faq-hero { padding: 80px 48px; text-align: center; background: linear-gradient(180deg, #121210 0%, var(--dark) 100%); }
+.faq-hero h1 { font-size: clamp(40px, 6vw, 72px); margin-bottom: 20px; }
+.faq-list { max-width: 800px; margin: 0 auto; padding: 60px 48px; }
+.faq-item { border-bottom: 1px solid var(--glass-border); padding: 24px 0; }
+.faq-question { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--cream); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: color 0.3s; }
+.faq-question:hover { color: var(--gold); }
+.faq-question::after { content: '+'; font-family: 'Inter', sans-serif; font-size: 24px; color: var(--gold); transition: transform 0.3s; }
+.faq-item.open .faq-question::after { transform: rotate(45deg); }
+.faq-answer { font-size: 15px; color: var(--text-muted); line-height: 1.8; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.4s; }
+.faq-item.open .faq-answer { max-height: 300px; padding-top: 16px; }
+
+/* Account Page */
+.account-page { padding-top: 100px; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.account-box { max-width: 420px; width: 100%; padding: 60px 48px; border: 1px solid var(--glass-border); background: rgba(255, 252, 248, 0.02); text-align: center; }
+.account-box h2 { font-size: 32px; margin-bottom: 8px; }
+.account-box p { font-size: 14px; color: var(--text-muted); margin-bottom: 40px; }
+.account-box .form-group { text-align: left; }
+.account-box .btn-primary { width: 100%; margin-top: 16px; }
+.account-toggle { margin-top: 24px; font-size: 14px; color: var(--text-muted); }
+.account-toggle a { color: var(--gold); text-decoration: none; cursor: pointer; }
+.account-toggle a:hover { text-decoration: underline; }
+
+/* Cart Drawer */
+.cart-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6); z-index: 2000; opacity: 0; visibility: hidden; transition: all 0.4s; }
+.cart-overlay.open { opacity: 1; visibility: visible; }
+.cart-drawer { position: fixed; top: 0; right: 0; width: 420px; max-width: 100%; height: 100vh; background: #121210; border-left: 1px solid var(--glass-border); z-index: 2001; transform: translateX(100%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; }
+.cart-drawer.open { transform: translateX(0); }
+.cart-header { padding: 32px; border-bottom: 1px solid var(--glass-border); display: flex; justify-content: space-between; align-items: center; }
+.cart-header h3 { font-size: 20px; font-weight: 400; }
+.cart-close { background: none; border: none; color: var(--text-muted); font-size: 24px; cursor: pointer; transition: color 0.3s; }
+.cart-close:hover { color: var(--cream); }
+.cart-items { flex: 1; overflow-y: auto; padding: 24px 32px; }
+.cart-item { display: flex; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--glass-border); }
+.cart-item-img { width: 80px; height: 100px; background: linear-gradient(135deg, #1a1815 0%, #2a2520 100%); flex-shrink: 0; border: 1px solid var(--glass-border); }
+.cart-item-info { flex: 1; }
+.cart-item-name { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--cream); margin-bottom: 4px; }
+.cart-item-variant { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+.cart-item-price { font-size: 14px; color: var(--gold); font-weight: 500; }
+.cart-item-remove { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 18px; transition: color 0.3s; align-self: flex-start; }
+.cart-item-remove:hover { color: #c44; }
+.cart-footer { padding: 32px; border-top: 1px solid var(--glass-border); }
+.cart-subtotal { display: flex; justify-content: space-between; margin-bottom: 8px; }
+.cart-subtotal span:first-child { font-size: 14px; color: var(--text-muted); }
+.cart-subtotal span:last-child { font-size: 18px; color: var(--cream); font-weight: 500; }
+.cart-shipping { font-size: 12px; color: var(--text-muted); margin-bottom: 24px; }
+.cart-checkout { width: 100%; padding: 18px; background: var(--gold); border: none; color: var(--dark); font-size: 12px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; cursor: pointer; transition: all 0.3s; margin-bottom: 12px; }
+.cart-checkout:hover { background: var(--gold-light); box-shadow: 0 10px 40px rgba(196, 163, 90, 0.3); }
+.cart-continue { width: 100%; padding: 14px; background: transparent; border: 1px solid var(--glass-border); color: var(--text-muted); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all 0.3s; }
+.cart-continue:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Mobile Menu */
+.mobile-menu-btn { display: none; background: none; border: none; color: var(--cream); font-size: 24px; cursor: pointer; }
+.mobile-menu { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(15, 15, 15, 0.98); z-index: 1500; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px; opacity: 0; visibility: hidden; transition: all 0.4s; }
+.mobile-menu.open { opacity: 1; visibility: visible; }
+.mobile-menu a { font-family: 'Cormorant Garamond', serif; font-size: 32px; color: var(--cream); text-decoration: none; transition: color 0.3s; }
+.mobile-menu a:hover { color: var(--gold); }
+.mobile-menu-close { position: absolute; top: 24px; right: 24px; background: none; border: none; color: var(--cream); font-size: 32px; cursor: pointer; }
+
+/* Toast */
+.toast { position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%) translateY(100px); background: rgba(15, 15, 15, 0.95); border: 1px solid var(--gold); padding: 16px 32px; color: var(--cream); font-size: 14px; letter-spacing: 1px; z-index: 3000; transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); backdrop-filter: blur(10px); }
+.toast.show { transform: translateX(-50%) translateY(0); }
+
+/* Page Transitions */
+.page { display: none; animation: fadeIn 0.6s ease-out; }
+.page.active { display: block; }
+
+/* Grain overlay */
+.grain { position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: 0.02; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .philosophy-content { grid-template-columns: 1fr; }
+  .pd-container { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .insta-grid { grid-template-columns: repeat(3, 1fr); }
+  .ingredient-detail-card { grid-template-columns: 1fr; }
+  .ingredient-detail-card:nth-child(even) { direction: ltr; }
+  .contact-info { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .nav { padding: 16px 24px; }
+  .nav-links { display: none; }
+  .mobile-menu-btn { display: block; }
+  .section { padding: 80px 24px; }
+  .hero-cta { flex-direction: column; align-items: center; }
+  .btn { width: 100%; max-width: 280px; text-align: center; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .why-item:nth-child(3n) { border-right: 1px solid var(--glass-border); }
+  .why-item:nth-child(2n) { border-right: none; }
+  .cart-drawer { width: 100%; }
+  .pd-container { padding: 40px 24px; }
+  .shop-header { padding: 40px 24px; }
+  .shop-grid { padding: 40px 24px; }
+  .insta-grid { grid-template-columns: repeat(2, 1fr); }
+  .newsletter-form { flex-direction: column; }
+  .about-story { padding: 60px 24px; }
+  .ingredients-detail { padding: 40px 24px; }
+  .sustain-content { padding: 40px 24px; }
+  .journal-grid { padding: 40px 24px; }
+  .contact-form { padding: 40px 24px; }
+  .faq-list { padding: 40px 24px; }
+  .account-box { padding: 40px 24px; margin: 0 24px; }
+}
+</style>
+<base target="_blank">
+</head>
+<body>
+<div class="grain"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="navbar">
+  <a class="nav-logo" onclick="showPage('home')">UNKNOWN</a>
+  <ul class="nav-links">
+    <li><a onclick="showPage('shop')">Shop</a></li>
+    <li><a onclick="showPage('ingredients')">Ingredients</a></li>
+    <li><a onclick="showPage('about')">Our Story</a></li>
+    <li><a onclick="showPage('journal')">Journal</a></li>
+    <li><a onclick="showPage('sustainability')">Sustainability</a></li>
+  </ul>
+  <div class="nav-actions">
+    <span class="nav-icon" onclick="showPage('account')" title="Account">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </span>
+    <span class="nav-icon" onclick="showPage('wishlist')" title="Wishlist">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+    </span>
+    <span class="nav-icon" onclick="toggleCart()" title="Cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="cart-count" id="cartCount">2</span>
+    </span>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="toggleMobileMenu()">×</button>
+  <a onclick="showPage('shop'); toggleMobileMenu()">Shop</a>
+  <a onclick="showPage('ingredients'); toggleMobileMenu()">Ingredients</a>
+  <a onclick="showPage('about'); toggleMobileMenu()">Our Story</a>
+  <a onclick="showPage('journal'); toggleMobileMenu()">Journal</a>
+  <a onclick="showPage('sustainability'); toggleMobileMenu()">Sustainability</a>
+  <a onclick="showPage('contact'); toggleMobileMenu()">Contact</a>
+</div>
+
+<!-- Cart Drawer -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button class="cart-close" onclick="toggleCart()">×</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-item">
+      <div class="cart-item-img"></div>
+      <div class="cart-item-info">
+        <div class="cart-item-name">Glow Face Cream</div>
+        <div class="cart-item-variant">50ml / A2 Bilona Ghee</div>
+        <div class="cart-item-price">₹4,800</div>
+      </div>
+      <button class="cart-item-remove" onclick="removeFromCart(this)">×</button>
+    </div>
+    <div class="cart-item">
+      <div class="cart-item-img"></div>
+      <div class="cart-item-info">
+        <div class="cart-item-name">Nourishing Face Oil</div>
+        <div class="cart-item-variant">30ml / Prickly Pear</div>
+        <div class="cart-item-price">₹3,600</div>
+      </div>
+      <button class="cart-item-remove" onclick="removeFromCart(this)">×</button>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">₹8,400</span>
+    </div>
+    <p class="cart-shipping">Shipping & taxes calculated at checkout</p>
+    <button class="cart-checkout">Proceed to Checkout</button>
+    <button class="cart-continue" onclick="toggleCart()">Continue Shopping</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">Added to cart</div>
+
+<!-- ==================== HOME PAGE ==================== -->
+<div class="page active" id="page-home">
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Ayurvedic Bioactive Skincare</div>
+    <h1 class="hero-title">Nature Perfected.<br>Science Refined.</h1>
+    <p class="hero-subtitle">Luxury skincare powered by A2 Bilona Ghee &amp; Prickly Pear Cactus. Ancient wisdom, modern results.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" onclick="showPage('shop')">Shop Collection</a>
+      <a class="btn btn-secondary" onclick="showPage('about')">Discover Our Story</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Featured Collection -->
+<section class="section collection-section">
+  <div class="section-header animate-on-scroll">
+    <span class="section-label">The Collection</span>
+    <h2 class="section-title">Curated for Radiance</h2>
+    <p class="section-subtitle">Each formula is a masterpiece of Ayurvedic tradition and cutting-edge biotechnology.</p>
+  </div>
+  <div class="products-grid">
+    <div class="product-card animate-on-scroll delay-1" onclick="showProduct('glow-cream')">
+      <div class="product-image">
+        <svg viewBox="0 0 100 100" fill="none"><ellipse cx="50" cy="55" rx="30" ry="35" fill="rgba(196,163,90,0.15)"/><ellipse cx="50" cy="50" rx="28" ry="32" fill="rgba(196,163,90,0.08)" stroke="rgba(196,163,90,0.3)" stroke-width="0.5"/><path d="M50 25 Q55 20 60 25" stroke="rgba(196,163,90,0.4)" stroke-width="0.5" fill="none"/></svg>
+        <span class="product-badge">Bestseller</span>
+        <div class="product-wishlist" onclick="event.stopPropagation(); toggleWishlist(this)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Face Care</div>
+        <h3 class="product-name">Glow Face Cream</h3>
+        <p class="product-desc">A2 Bilona Ghee &amp; Saffron infusion for luminous, deeply nourished skin.</p>
+        <div class="product-footer">
+          <span class="product-price">₹4,800 <span class="original">₹5,200</span></span>
+          <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Glow Face Cream', 4800)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card animate-on-scroll delay-2" onclick="showProduct('face-oil')">
+      <div class="product-image">
+        <svg viewBox="0 0 100 100" fill="none"><rect x="35" y="20" width="30" height="55" rx="3" fill="rgba(196,163,90,0.1)" stroke="rgba(196,163,90,0.3)" stroke-width="0.5"/><rect x="40" y="15" width="20" height="8" rx="2" fill="rgba(196,163,90,0.15)"/><ellipse cx="50" cy="75" rx="18" ry="5" fill="rgba(196,163,90,0.05)"/></svg>
+        <div class="product-wishlist" onclick="event.stopPropagation(); toggleWishlist(this)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Face Care</div>
+        <h3 class="product-name">Nourishing Face Oil</h3>
+        <p class="product-desc">Prickly Pear Cactus Seed Oil with Kumkumadi for overnight repair.</p>
+        <div class="product-footer">
+          <span class="product-price">₹3,600</span>
+          <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Nourishing Face Oil', 3600)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card animate-on-scroll delay-3" onclick="showProduct('cleanser')">
+      <div class="product-image">
+        <svg viewBox="0 0 100 100" fill="none"><ellipse cx="50" cy="50" rx="25" ry="35" fill="rgba(196,163,90,0.1)" stroke="rgba(196,163,90,0.3)" stroke-width="0.5"/><ellipse cx="50" cy="50" rx="20" ry="28" fill="rgba(196,163,90,0.05)"/><path d="M50 20 L50 30 M50 70 L50 80" stroke="rgba(196,163,90,0.3)" stroke-width="0.5"/></svg>
+        <span class="product-badge">New</span>
+        <div class="product-wishlist" onclick="event.stopPropagation(); toggleWishlist(this)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Cleanse</div>
+        <h3 class="product-name">Gentle Cleanser</h3>
+        <p class="product-desc">Aloe Vera &amp; Rose Extract for a pure, balanced complexion.</p>
+        <div class="product-footer">
+          <span class="product-price">₹2,400</span>
+          <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Gentle Cleanser', 2400)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card animate-on-scroll delay-4" onclick="showProduct('lip-balm')">
+      <div class="product-image">
+        <svg viewBox="0 0 100 100" fill="none"><rect x="38" y="25" width="24" height="50" rx="12" fill="rgba(196,163,90,0.1)" stroke="rgba(196,163,90,0.3)" stroke-width="0.5"/><rect x="38" y="20" width="24" height="10" rx="3" fill="rgba(196,163,90,0.15)"/></svg>
+        <div class="product-wishlist" onclick="event.stopPropagation(); toggleWishlist(this)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">Lip Care</div>
+        <h3 class="product-name">Lip Therapy Balm</h3>
+        <p class="product-desc">Bilona Ghee &amp; Beeswax for supple, protected lips.</p>
+        <div class="product-footer">
+          <span class="product-price">₹1,200</span>
+          <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Lip Therapy Balm', 1200)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Signature Ingredients -->
+<section class="section ingredients-section">
+  <div class="section-header animate-on-scroll">
+    <span class="section-label">The Alchemy</span>
+    <h2 class="section-title">Signature Ingredients</h2>
+    <p class="section-subtitle">Ancient Ayurvedic treasures, scientifically validated for modern skincare.</p>
+  </div>
+  <div class="ingredients-grid">
+    <div class="ingredient-card animate-on-scroll delay-1">
+      <div class="ingredient-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M6 12h12"/></svg>
+      </div>
+      <h3 class="ingredient-name">A2 Bilona Ghee</h3>
+      <span class="ingredient-sanskrit">Ghrita</span>
+      <p class="ingredient-desc">Hand-churned from indigenous Gir cow milk using the traditional Bilona method. Rich in butyric acid, vitamins A, D, E, and K2. Deeply penetrates the skin barrier to repair, nourish, and restore radiance from within.</p>
+      <div class="ingredient-benefits">
+        <span class="benefit-tag">Deep Nourishment</span>
+        <span class="benefit-tag">Barrier Repair</span>
+        <span class="benefit-tag">Anti-Aging</span>
+      </div>
+    </div>
+
+    <div class="ingredient-card animate-on-scroll delay-2">
+      <div class="ingredient-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <h3 class="ingredient-name">Prickly Pear Cactus</h3>
+      <span class="ingredient-sanskrit">Nagfani</span>
+      <p class="ingredient-desc">Cold-pressed seed oil from the Thar Desert. Contains the highest vitamin E content of any plant oil, plus rare betalains and linoleic acid. Exceptional for hydration, brightening, and reducing inflammation.</p>
+      <div class="ingredient-benefits">
+        <span class="benefit-tag">Vitamin E Rich</span>
+        <span class="benefit-tag">Hydration</span>
+        <span class="benefit-tag">Brightening</span>
+      </div>
+    </div>
+
+    <div class="ingredient-card animate-on-scroll delay-3">
+      <div class="ingredient-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <h3 class="ingredient-name">Kumkumadi Oil</h3>
+      <span class="ingredient-sanskrit">Kumkumadi Tailam</span>
+      <p class="ingredient-desc">A classical Ayurvedic formulation with saffron, sandalwood, and 21 precious herbs. Traditionally used by royalty for complexion enhancement, pigmentation correction, and achieving a natural golden glow.</p>
+      <div class="ingredient-benefits">
+        <span class="benefit-tag">Complexion</span>
+        <span class="benefit-tag">Pigmentation</span>
+        <span class="benefit-tag">Glow</span>
+      </div>
+    </div>
+
+    <div class="ingredient-card animate-on-scroll delay-1">
+      <div class="ingredient-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M8 12s1.5 2 4 2 4-2 4-2"/></svg>
+      </div>
+      <h3 class="ingredient-name">Kashmiri Saffron</h3>
+      <span class="ingredient-sanskrit">Kesar</span>
+      <p class="ingredient-desc">Grade A1 Mongra saffron from Pampore, Kashmir. Contains crocin and safranal compounds clinically proven to improve skin texture, reduce dark spots, and impart a luminous complexion.</p>
+      <div class="ingredient-benefits">
+        <span class="benefit-tag">Skin Texture</span>
+        <span class="benefit-tag">Dark Spots</span>
+        <span class="benefit-tag">Luminosity</span>
+      </div>
+    </div>
+
+    <div class="ingredient-card animate-on-scroll delay-2">
+      <div class="ingredient-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 2C7 2 3 6 3 11c0 3 1.5 5.5 4 7v2c0 1 1 2 2 2h6c1 0 2-1 2-2v-2c2.5-1.5 4-4 4-7 0-5-4-9-9-9z"/></svg>
+      </div>
+      <h3 class="ingredient-name">Aloe Vera</h3>
+      <span class="ingredient-sanskrit">Kumari</span>
+      <p class="ingredient-desc">Organically cultivated in Rajasthan. Fresh inner leaf gel processed within 6 hours of harvest. Rich in polysaccharides, amino acids, and enzymes that soothe, hydrate, and accelerate skin healing.</p>
+      <div class="ingredient-benefits">
+        <span class="benefit-tag">Soothing</span>
+        <span class="benefit-tag">Healing</span>
+        <span class="benefit-tag">Hydration</span>
+      </div>
+    </div>
+
+    <div class="ingredient-card animate-on-scroll delay-3">
+      <div class="ingredient-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 2C7 2 3 6 3 11c0 3 1.5 5.5 4 7v2c0 1 1 2 2 2h6c1 0 2-1 2-2v-2c2.5-1.5 4-4 4-7 0-5-4-9-9-9z"/><circle cx="12" cy="11" r="3"/></svg>
+      </div>
+      <h3 class="ingredient-name">Rose Extract</h3>
+      <span class="ingredient-sanskrit">Gulab</span>
+      <p class="ingredient-desc">Damask rose hydrosol and essential oil from Kannauj, the perfume capital of India. Contains natural antioxidants, astringent tannins, and aromatic compounds that tone, balance pH, and calm the mind.</p>
+      <div class="ingredient-benefits">
+        <span class="benefit-tag">Toning</span>
+        <span class="benefit-tag">pH Balance</span>
+        <span class="benefit-tag">Aromatherapy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why UNKNOWN -->
+<section class="section why-section">
+  <div class="section-header animate-on-scroll">
+    <span class="section-label">Our Promise</span>
+    <h2 class="section-title">Why UNKNOWN</h2>
+    <p class="section-subtitle">Every choice we make is guided by uncompromising standards of purity, efficacy, and responsibility.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-item animate-on-scroll delay-1">
+      <div class="why-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3 class="why-title">100% Natural</h3>
+      <p class="why-desc">Every ingredient is sourced from nature. No synthetic chemicals, parabens, sulfates, or artificial fragrances.</p>
+    </div>
+    <div class="why-item animate-on-scroll delay-2">
+      <div class="why-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <h3 class="why-title">Cruelty Free</h3>
+      <p class="why-desc">Leaping Bunny certified. We never test on animals and work only with ethical ingredient suppliers.</p>
+    </div>
+    <div class="why-item animate-on-scroll delay-3">
+      <div class="why-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+      </div>
+      <h3 class="why-title">Sustainable</h3>
+      <p class="why-desc">Recyclable glass packaging, FSC-certified paper, and carbon-neutral shipping on every order.</p>
+    </div>
+    <div class="why-item animate-on-scroll delay-1">
+      <div class="why-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <h3 class="why-title">Dermatologist Tested</h3>
+      <p class="why-desc">Every formula undergoes rigorous clinical testing for safety, efficacy, and compatibility with all skin types.</p>
+    </div>
+    <div class="why-item animate-on-scroll delay-2">
+      <div class="why-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <h3 class="why-title">Handmade in India</h3>
+      <p class="why-desc">Crafted in small batches by Ayurvedic artisans in Rajasthan, preserving centuries-old preparation techniques.</p>
+    </div>
+    <div class="why-item animate-on-scroll delay-3">
+      <div class="why-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M8 12s1.5 2 4 2 4-2 4-2"/></svg>
+      </div>
+      <h3 class="why-title">Small Batch</h3>
+      <p class="why-desc">Limited production runs ensure maximum freshness, potency, and attention to every single jar and bottle.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Before & After -->
+<section class="before-after-section">
+  <div class="section-header animate-on-scroll">
+    <span class="section-label">Real Results</span>
+    <h2 class="section-title">Visible Transformation</h2>
+    <p class="section-subtitle">Consistent use of UNKNOWN rituals, documented over 8 weeks.</p>
+  </div>
+  <div class="ba-container animate-on-scroll">
+    <div class="ba-slider" id="baSlider">
+      <div class="ba-image ba-before">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--text-muted)">Before — Week 0</span>
+      </div>
+      <div class="ba-image ba-after" id="baAfter">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--text-muted)">After — Week 8</span>
+      </div>
+      <div class="ba-handle" id="baHandle">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--dark)" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </div>
+    </div>
+    <div class="ba-labels">
+      <div class="ba-label">Before<span>Week 0</span></div>
+      <div class="ba-label">After<span>Week 8</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Philosophy -->
+<section class="section philosophy-section">
+  <div class="philosophy-content">
+    <div class="philosophy-text animate-on-scroll">
+      <span class="section-label">Our Philosophy</span>
+      <h2 class="section-title">Where Ancient Wisdom<br>Meets Modern Science</h2>
+      <p class="philosophy-para">For over 5,000 years, Ayurveda has understood that true beauty emerges from balance — between body, mind, and the natural world. At UNKNOWN, we honor this ancient intelligence while embracing the precision of contemporary biotechnology.</p>
+      <p class="philosophy-para">Our laboratory in Jaipur works alongside traditional Vaidyas (Ayurvedic physicians) to extract, stabilize, and enhance the bioactive compounds found in nature's most potent botanicals. The result is skincare that doesn't just sit on the surface — it communicates with your skin at the cellular level.</p>
+      <p class="philosophy-para">We believe luxury is not excess. It is the uncompromising pursuit of what is pure, effective, and meaningful. Every UNKNOWN product is a testament to this belief — a bridge between the sacred rituals of the past and the scientific rigor of the present.</p>
+      <div class="philosophy-quote">"The skin remembers everything. Feed it truth."</div>
+    </div>
+    <div class="philosophy-visual animate-on-scroll delay-2"></div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="section reviews-section">
+  <div class="section-header animate-on-scroll">
+    <span class="section-label">Testimonials</span>
+    <h2 class="section-title">What They Say</h2>
+    <p class="section-subtitle">Authentic voices from our community of skincare enthusiasts.</p>
+  </div>
+  <div class="reviews-carousel animate-on-scroll">
+    <div class="review-card" id="reviewCard">
+      <div class="review-stars">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <p class="review-text" id="reviewText">"I've tried every luxury brand on the market. UNKNOWN is the first that made me stop searching. The Glow Face Cream has transformed my skin in ways I didn't think possible — luminous, balanced, and genuinely nourished."</p>
+      <div class="review-author">
+        <span id="reviewAuthor">Ananya Sharma</span>
+        Mumbai, India
+      </div>
+    </div>
+    <div class="review-nav">
+      <button class="review-dot active" onclick="showReview(0)"></button>
+      <button class="review-dot" onclick="showReview(1)"></button>
+      <button class="review-dot" onclick="showReview(2)"></button>
+      <button class="review-dot" onclick="showReview(3)"></button>
+    </div>
+  </div>
+</section>
+
+<!-- Sustainability -->
+<section class="section sustainability-section">
+  <div class="section-header animate-on-scroll">
+    <span class="section-label">Our Commitment</span>
+    <h2 class="section-title">Sustainability</h2>
+    <p class="section-subtitle">Beauty that gives back more than it takes.</p>
+  </div>
+  <div class="sustain-grid">
+    <div class="sustain-card animate-on-scroll delay-1">
+      <div class="sustain-number">01</div>
+      <h3 class="sustain-title">Ethical Sourcing</h3>
+      <p class="sustain-desc">We partner directly with farming cooperatives across India — from Gir cow herders in Gujarat to saffron cultivators in Kashmir. Fair wages, organic practices, and zero exploitation.</p>
+    </div>
+    <div class="sustain-card animate-on-scroll delay-2">
+      <div class="sustain-number">02</div>
+      <h3 class="sustain-title">Zero-Waste Packaging</h3>
+      <p class="sustain-desc">Our amber glass jars are infinitely recyclable. Outer boxes use seed-embedded paper that grows into wildflowers. Every element is designed to return to the earth gracefully.</p>
+    </div>
+    <div class="sustain-card animate-on-scroll delay-3">
+      <div class="sustain-number">03</div>
+      <h3 class="sustain-title">Carbon Neutral</h3>
+      <p class="sustain-desc">We offset 100% of our shipping emissions through verified reforestation projects in the Western Ghats. Plus, we plant a tree for every order placed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Featured In -->
+<section class="featured-section">
+  <div class="section-header animate-on-scroll" style="margin-bottom:48px">
+    <span class="section-label">As Seen In</span>
+    <h2 class="section-title" style="font-size:clamp(28px,4vw,40px)">Featured In</h2>
+  </div>
+  <div class="featured-logos animate-on-scroll">
+    <span class="featured-logo">VOGUE</span>
+    <span class="featured-logo">ELLE</span>
+    <span class="featured-logo">Harper's BAZAAR</span>
+    <span class="featured-logo">COSMOPOLITAN</span>
+    <span class="featured-logo">GQ</span>
+    <span class="featured-logo">FORBES</span>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="section newsletter-section">
+  <div class="newsletter-content animate-on-scroll">
+    <span class="section-label">Join the Inner Circle</span>
+    <h2 class="section-title">The UNKNOWN Society</h2>
+    <p class="section-subtitle">Exclusive skincare education, early access to new formulations, and members-only rituals delivered to your inbox.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Welcome to the UNKNOWN Society');">
+      <input type="email" class="newsletter-input" placeholder="Your email address" required>
+      <button type="submit" class="newsletter-btn">Join</button>
+    </form>
+  </div>
+</section>
+
+<!-- Instagram -->
+<section class="instagram-section">
+  <div class="section-header animate-on-scroll" style="margin-bottom:48px;padding:0 48px">
+    <span class="section-label">@unknown.skincare</span>
+    <h2 class="section-title" style="font-size:clamp(28px,4vw,40px)">Follow the Journey</h2>
+  </div>
+  <div class="insta-grid">
+    <div class="insta-item"></div>
+    <div class="insta-item"></div>
+    <div class="insta-item"></div>
+    <div class="insta-item"></div>
+    <div class="insta-item"></div>
+    <div class="insta-item"></div>
+  </div>
+</section>
+
+</div>
+<!-- ==================== END HOME PAGE ==================== -->
+
+<!-- ==================== SHOP PAGE ==================== -->
+<div class="page" id="page-shop">
+  <div class="shop-header">
+    <span class="section-label">The Collection</span>
+    <h1 class="section-title">Shop All</h1>
+    <p class="section-subtitle">Discover our complete range of Ayurvedic bioactive skincare.</p>
+    <div class="shop-filters">
+      <button class="filter-btn active" onclick="filterProducts('all', this)">All</button>
+      <button class="filter-btn" onclick="filterProducts('face', this)">Face Care</button>
+      <button class="filter-btn" onclick="filterProducts('cleanse', this)">Cleanse</button>
+      <button class="filter-btn" onclick="filterProducts('lip', this)">Lip Care</button>
+      <button class="filter-btn" onclick="filterProducts('body', this)">Body Care</button>
+      <button class="filter-btn" onclick="filterProducts('sets', this)">Sets & Bundles</button>
+    </div>
+  </div>
+  <div class="shop-grid">
+    <div class="products-grid" id="shopProducts">
+      <!-- Products populated by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PRODUCT DETAIL PAGE ==================== -->
+<div class="page" id="page-product">
+  <div class="product-detail">
+    <div class="pd-container">
+      <div class="pd-gallery animate-on-scroll">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+          <svg width="40%" height="40%" viewBox="0 0 100 100" fill="none" style="opacity:0.4"><ellipse cx="50" cy="55" rx="30" ry="35" fill="rgba(196,163,90,0.15)"/><ellipse cx="50" cy="50" rx="28" ry="32" fill="rgba(196,163,90,0.08)" stroke="rgba(196,163,90,0.3)" stroke-width="0.5"/></svg>
+        </div>
+      </div>
+      <div class="pd-info animate-on-scroll delay-1">
+        <div class="product-category" id="pdCategory">Face Care</div>
+        <h1 id="pdName">Glow Face Cream</h1>
+        <div class="pd-price" id="pdPrice">₹4,800</div>
+        <p class="pd-desc" id="pdDesc">A luxurious fusion of A2 Bilona Ghee and Kashmiri Saffron, this cream delivers deep cellular nourishment while brightening and evening skin tone. The traditional Bilona method preserves the full spectrum of fat-soluble vitamins and butyric acid, creating a formula that repairs the skin barrier and imparts a natural, lit-from-within glow.</p>
+        <div class="pd-options">
+          <span class="pd-option-label">Size</span>
+          <div class="pd-size-options">
+            <button class="pd-size active" onclick="selectSize(this)">30ml</button>
+            <button class="pd-size" onclick="selectSize(this)">50ml</button>
+          </div>
+        </div>
+        <div class="pd-actions">
+          <div class="pd-qty">
+            <button onclick="changeQty(-1)">−</button>
+            <span id="pdQty">1</span>
+            <button onclick="changeQty(1)">+</button>
+          </div>
+          <button class="pd-add-cart" onclick="addToCartFromPD()">Add to Cart — ₹4,800</button>
+          <button class="pd-wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </button>
+        </div>
+        <div class="pd-tabs">
+          <div class="pd-tab-nav">
+            <button class="pd-tab-btn active" onclick="switchTab('description')">Description</button>
+            <button class="pd-tab-btn" onclick="switchTab('ingredients')">Ingredients</button>
+            <button class="pd-tab-btn" onclick="switchTab('how-to-use')">How to Use</button>
+          </div>
+          <div class="pd-tab-content" id="tab-description">
+            <p>This cream is the culmination of a two-year formulation journey. We source A2 milk from free-grazing Gir cows in Gujarat, where the traditional Bilona method — hand-churning curd in a wooden churner — produces ghee of unparalleled purity and potency.</p>
+            <p style="margin-top:16px">The ghee is then infused with Grade A1 Kashmiri saffron threads, rose extract, and a proprietary blend of Ayurvedic herbs under the guidance of third-generation Vaidyas. The result is a cream that doesn't just moisturize — it transforms.</p>
+          </div>
+          <div class="pd-tab-content" id="tab-ingredients" style="display:none">
+            <ul>
+              <li>A2 Bilona Ghee (clarified butter)</li>
+              <li>Kashmiri Saffron (Crocus sativus)</li>
+              <li>Damask Rose Hydrosol (Rosa damascena)</li>
+              <li>Prickly Pear Seed Oil (Opuntia ficus-indica)</li>
+              <li>Aloe Vera Gel (Aloe barbadensis)</li>
+              <li>Vitamin E (Tocopherol)</li>
+              <li>Beeswax (Cera alba)</li>
+              <li>Essential Oil Blend</li>
+            </ul>
+          </div>
+          <div class="pd-tab-content" id="tab-how-to-use" style="display:none">
+            <p>Apply a pearl-sized amount to cleansed face and neck, morning and evening. Warm between fingertips before application to activate the bioactive compounds. For best results, pair with our Nourishing Face Oil as a night treatment.</p>
+            <p style="margin-top:16px"><strong>Ritual Tip:</strong> Take a moment to inhale the natural aroma before applying. This simple act of mindfulness enhances the skin-brain connection and amplifies the cream's calming benefits.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ABOUT PAGE ==================== -->
+<div class="page" id="page-about">
+  <div class="about-hero">
+    <div>
+      <span class="section-label">Our Story</span>
+      <h1>The UNKNOWN Origin</h1>
+      <p>From the ancient ghats of the Ganges to the cutting-edge laboratories of Jaipur — a journey of rediscovery.</p>
+    </div>
+  </div>
+  <div class="about-story">
+    <p>UNKNOWN was born from a simple, powerful question: What if the skincare secrets of ancient India were unlocked with the precision of modern science?</p>
+    <p>Our founder, Dr. Priya Mehta, spent seven years traveling across India — from the saffron fields of Pampore to the Gir cow sanctuaries of Gujarat — documenting the traditional preparation methods that have been passed down through generations of Ayurvedic families.</p>
+    <p>What she discovered was extraordinary. These weren't just folk remedies. They were sophisticated bioactive formulations, refined over millennia, that modern science is only now beginning to understand.</p>
+    <h3>The Bilona Revelation</h3>
+    <p>The turning point came in a small village near Porbandar, where Dr. Mehta witnessed the Bilona method firsthand. The difference between machine-processed ghee and hand-churned Bilona ghee was not just qualitative — it was molecular. The traditional method preserved a complex matrix of fatty acids, vitamins, and bioactive compounds that industrial processing destroyed.</p>
+    <p>This discovery became the foundation of UNKNOWN. We committed to sourcing only Bilona ghee, made by the same families who have been making it for centuries. And we committed to applying rigorous scientific validation to every traditional claim.</p>
+    <h3>The Laboratory of Tradition</h3>
+    <p>Today, UNKNOWN operates a unique hybrid facility in Jaipur. On one side, Vaidyas prepare traditional decoctions and infusions using methods unchanged for thousands of years. On the other, biochemists analyze, stabilize, and enhance these preparations using state-of-the-art extraction and encapsulation technologies.</p>
+    <p>The result is skincare that honors its origins while delivering results that meet the highest standards of modern dermatology. Every UNKNOWN product carries both the wisdom of the past and the promise of the future.</p>
+    <div class="philosophy-quote" style="margin-top:60px">"We don't create beauty. We remove the obstacles that hide it."</div>
+  </div>
+</div>
+
+<!-- ==================== INGREDIENTS PAGE ==================== -->
+<div class="page" id="page-ingredients">
+  <div class="ingredients-hero">
+    <span class="section-label">The Library</span>
+    <h1>Ingredients</h1>
+    <p class="section-subtitle">Full transparency on every element that touches your skin.</p>
+  </div>
+  <div class="ingredients-detail">
+    <div class="ingredient-detail-card animate-on-scroll">
+      <div class="ingredient-detail-visual"></div>
+      <div class="ingredient-detail-info">
+        <h3>A2 Bilona Ghee</h3>
+        <span class="sanskrit">Ghrita — The Elixir of Life</span>
+        <p>Sourced from indigenous Gir cows in Gujarat, our ghee is produced using the ancient Bilona method: curd is hand-churned in a wooden churner, and the butter is slow-cooked over a wood fire. This 48-hour process yields ghee with a unique fatty acid profile rich in butyric acid, conjugated linoleic acid (CLA), and vitamins A, D, E, and K2.</p>
+        <h4>Scientific Benefits</h4>
+        <ul>
+          <li>Butyric acid repairs and strengthens the skin barrier</li>
+          <li>Vitamin K2 improves skin elasticity and reduces wrinkles</li>
+          <li>CLA provides anti-inflammatory and antioxidant protection</li>
+          <li>Deeply penetrates the dermis for cellular nourishment</li>
+        </ul>
+        <h4>Sourcing</h4>
+        <p>Partner cooperative in Junagadh, Gujarat. Cows are free-grazed on organic pasture. Zero antibiotics or hormones.</p>
+      </div>
+    </div>
+
+    <div class="ingredient-detail-card animate-on-scroll">
+      <div class="ingredient-detail-visual"></div>
+      <div class="ingredient-detail-info">
+        <h3>Prickly Pear Cactus Seed Oil</h3>
+        <span class="sanskrit">Nagfani — Desert's Liquid Gold</span>
+        <p>Harvested from the Thar Desert, each liter of this precious oil requires approximately 30 kg of seeds — about one million seeds. Cold-pressed to preserve its extraordinary nutrient density, it contains the highest vitamin E concentration of any plant oil, plus rare betalains and exceptional levels of linoleic acid.</p>
+        <h4>Scientific Benefits</h4>
+        <ul>
+          <li>Vitamin E content 150% higher than argan oil</li>
+          <li>Betalains provide superior antioxidant protection</li>
+          <li>Linoleic acid restores skin's lipid barrier</li>
+          <li>Reduces hyperpigmentation and dark spots</li>
+        </ul>
+        <h4>Sourcing</h4>
+        <p>Wild-harvested by desert communities in Rajasthan. Fair-trade certified. Seeds are a byproduct of fruit processing, ensuring zero waste.</p>
+      </div>
+    </div>
+
+    <div class="ingredient-detail-card animate-on-scroll">
+      <div class="ingredient-detail-visual"></div>
+      <div class="ingredient-detail-info">
+        <h3>Kumkumadi Oil</h3>
+        <span class="sanskrit">Kumkumadi Tailam — The Complexion Elixir</span>
+        <p>A classical Ayurvedic formulation documented in the Bhaishajya Ratnavali, containing saffron, sandalwood, turmeric, licorice, and 17 other precious herbs. Each ingredient is processed individually before being combined in a specific sequence and cooked in sesame oil over a slow flame for 72 hours.</p>
+        <h4>Scientific Benefits</h4>
+        <ul>
+          <li>Saffron crocin inhibits melanin overproduction</li>
+          <li>Sandalwood alpha-santalol reduces inflammation</li>
+          <li>Licorice glabridin brightens and evens skin tone</li>
+          <li>Sesame lignans provide deep antioxidant protection</li>
+        </ul>
+        <h4>Sourcing</h4>
+        <p>Prepared by third-generation Vaidya family in Jaipur. All herbs are organic and sustainably wild-crafted or cultivated.</p>
+      </div>
+    </div>
+
+    <div class="ingredient-detail-card animate-on-scroll">
+      <div class="ingredient-detail-visual"></div>
+      <div class="ingredient-detail-info">
+        <h3>Kashmiri Saffron</h3>
+        <span class="sanskrit">Kesar — The Red Gold</span>
+        <p>Grade A1 Mongra saffron from Pampore, Kashmir — the finest grade available. Each strand is hand-picked from the Crocus sativus flower during the brief autumn blooming season. Our saffron contains crocin levels exceeding 250, the highest standard for therapeutic grade.</p>
+        <h4>Scientific Benefits</h4>
+        <ul>
+          <li>Crocin improves skin texture and radiance</li>
+          <li>Safranal provides mood-enhancing aromatherapy</li>
+          <li>Kaempferol offers powerful antioxidant activity</li>
+          <li>Promotes collagen synthesis and cell renewal</li>
+        </ul>
+        <h4>Sourcing</h4>
+        <p>Direct partnership with Pampore farming cooperative. ISO-certified grading. Harvested within 24 hours of blooming.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SUSTAINABILITY PAGE ==================== -->
+<div class="page" id="page-sustainability">
+  <div class="sustain-hero">
+    <span class="section-label">Our Planet</span>
+    <h1>Sustainability</h1>
+    <p class="section-subtitle">Luxury without compromise — for your skin and the earth.</p>
+  </div>
+  <div class="sustain-content">
+    <div class="sustain-block animate-on-scroll">
+      <h3>Packaging Philosophy</h3>
+      <p>We believe the most beautiful packaging is the kind that disappears. Every UNKNOWN product is housed in amber glass — infinitely recyclable and UV-protective. Our outer boxes are made from seed-embedded paper that, when planted, grows into wildflowers. Even our shipping materials are compostable cornstarch foam and recycled paper.</p>
+      <p>We have eliminated all single-use plastics from our supply chain. Our commitment: by 2026, every element of our packaging will be either reusable, recyclable, or compostable.</p>
+    </div>
+    <div class="sustain-block animate-on-scroll">
+      <h3>Ethical Sourcing</h3>
+      <p>Our ingredient network spans the length and breadth of India, and every partnership is built on principles of fairness, transparency, and mutual respect. We pay 30% above market rates to our farming cooperatives. We provide technical training and organic certification support. And we commit to long-term contracts that give our partners the security to invest in sustainable practices.</p>
+      <p>Our A2 Bilona Ghee comes from a cooperative of 120 Gir cow herders in Gujarat. Our Prickly Pear seeds are collected by desert communities in Rajasthan who have been harvesting cactus fruit for generations. Our saffron is sourced from a women's cooperative in Pampore, Kashmir, where the tradition of saffron cultivation has been passed from mother to daughter for centuries.</p>
+    </div>
+    <div class="sustain-block animate-on-scroll">
+      <h3>Carbon Neutrality</h3>
+      <p>UNKNOWN is committed to achieving net-zero carbon emissions by 2027. We have already offset 100% of our shipping emissions through verified reforestation projects in the Western Ghats. Our Jaipur facility runs on 80% solar power. And for every order placed, we plant a tree through our partnership with Grow-Trees.com.</p>
+      <p>To date, our community has planted over 12,000 trees — a small forest that will sequester approximately 240 tonnes of CO2 over its lifetime.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== JOURNAL PAGE ==================== -->
+<div class="page" id="page-journal">
+  <div class="journal-hero">
+    <span class="section-label">The Journal</span>
+    <h1>Skincare Wisdom</h1>
+    <p class="section-subtitle">Education, rituals, and stories from the world of Ayurvedic beauty.</p>
+  </div>
+  <div class="journal-grid">
+    <div class="journal-card animate-on-scroll delay-1">
+      <div class="journal-card-img"></div>
+      <div class="journal-card-content">
+        <div class="journal-card-tag">Rituals</div>
+        <h3 class="journal-card-title">The Ancient Art of Abhyanga: Self-Massage for Radiant Skin</h3>
+        <p class="journal-card-excerpt">Discover the 5,000-year-old practice of Ayurvedic self-massage and how it can transform not just your skin, but your entire relationship with your body.</p>
+        <span class="journal-card-date">July 10, 2026</span>
+      </div>
+    </div>
+    <div class="journal-card animate-on-scroll delay-2">
+      <div class="journal-card-img"></div>
+      <div class="journal-card-content">
+        <div class="journal-card-tag">Science</div>
+        <h3 class="journal-card-title">Why Bilona Ghee Outperforms Every Modern Moisturizer</h3>
+        <p class="journal-card-excerpt">A deep dive into the molecular differences between traditional hand-churned ghee and industrial alternatives — and why your skin can tell the difference.</p>
+        <span class="journal-card-date">June 28, 2026</span>
+      </div>
+    </div>
+    <div class="journal-card animate-on-scroll delay-3">
+      <div class="journal-card-img"></div>
+      <div class="journal-card-content">
+        <div class="journal-card-tag">Ingredients</div>
+        <h3 class="journal-card-title">The Prickly Pear Secret: Desert's Most Powerful Skincare Ingredient</h3>
+        <p class="journal-card-excerpt">From the Thar Desert to your vanity — the remarkable journey of an ingredient with 150% more vitamin E than argan oil.</p>
+        <span class="journal-card-date">June 15, 2026</span>
+      </div>
+    </div>
+    <div class="journal-card animate-on-scroll delay-1">
+      <div class="journal-card-img"></div>
+      <div class="journal-card-content">
+        <div class="journal-card-tag">Wellness</div>
+        <h3 class="journal-card-title">Dinacharya: The Ayurvedic Daily Routine for Glowing Skin</h3>
+        <p class="journal-card-excerpt">How aligning your skincare routine with nature's circadian rhythms can unlock your skin's full potential.</p>
+        <span class="journal-card-date">May 30, 2026</span>
+      </div>
+    </div>
+    <div class="journal-card animate-on-scroll delay-2">
+      <div class="journal-card-img"></div>
+      <div class="journal-card-content">
+        <div class="journal-card-tag">Sustainability</div>
+        <h3 class="journal-card-title">From Seed to Skin: Our Zero-Waste Ingredient Journey</h3>
+        <p class="journal-card-excerpt">How we ensure that every ingredient in your UNKNOWN product leaves nothing but beauty behind.</p>
+        <span class="journal-card-date">May 12, 2026</span>
+      </div>
+    </div>
+    <div class="journal-card animate-on-scroll delay-3">
+      <div class="journal-card-img"></div>
+      <div class="journal-card-content">
+        <div class="journal-card-tag">Rituals</div>
+        <h3 class="journal-card-title">The Saffron Glow: A 2,000-Year-Old Complexion Secret</h3>
+        <p class="journal-card-excerpt">Why Cleopatra and Mughal empresses alike treasured this crimson thread — and what modern science confirms.</p>
+        <span class="journal-card-date">April 28, 2026</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CONTACT PAGE ==================== -->
+<div class="page" id="page-contact">
+  <div class="contact-hero">
+    <span class="section-label">Get in Touch</span>
+    <h1>Contact Us</h1>
+    <p class="section-subtitle">We would love to hear from you. Every message is read by our team.</p>
+  </div>
+  <div class="contact-info">
+    <div class="contact-info-item">
+      <h4>Email</h4>
+      <p>hello@unknownskincare.com<br>support@unknownskincare.com</p>
+    </div>
+    <div class="contact-info-item">
+      <h4>Phone</h4>
+      <p>+91 141 400 2000<br>Mon–Sat, 10am–6pm IST</p>
+    </div>
+    <div class="contact-info-item">
+      <h4>Address</h4>
+      <p>UNKNOWN Atelier<br>12 Jawahar Lal Nehru Marg<br>Jaipur, Rajasthan 302015</p>
+    </div>
+  </div>
+  <form class="contact-form" onsubmit="event.preventDefault(); showToast('Message sent. We will be in touch soon.');">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" placeholder="Your full name" required>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" placeholder="your@email.com" required>
+    </div>
+    <div class="form-group">
+      <label>Subject</label>
+      <input type="text" placeholder="How can we help?" required>
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea placeholder="Tell us everything..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+</div>
+
+<!-- ==================== FAQ PAGE ==================== -->
+<div class="page" id="page-faq">
+  <div class="faq-hero">
+    <span class="section-label">Questions</span>
+    <h1>FAQs</h1>
+    <p class="section-subtitle">Everything you need to know about UNKNOWN.</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">What makes UNKNOWN different from other luxury skincare brands?</div>
+      <div class="faq-answer">UNKNOWN is the only luxury brand that combines authentic Ayurvedic preparation methods — like the Bilona hand-churning technique — with modern biotechnology. Our ingredients are sourced directly from farming cooperatives across India, and every formula is clinically tested for efficacy while honoring traditional wisdom.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">Are UNKNOWN products suitable for sensitive skin?</div>
+      <div class="faq-answer">Yes. All UNKNOWN products are dermatologist-tested and formulated without common irritants like synthetic fragrances, sulfates, parabens, or artificial colors. Our ingredients are 100% natural and we provide full ingredient transparency for every product. However, we recommend patch testing before full use.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">How long will it take to see results?</div>
+      <div class="faq-answer">Most customers notice improved hydration and radiance within the first week. For more significant concerns like pigmentation, fine lines, or texture issues, we recommend consistent use for 6–8 weeks. Ayurvedic skincare works at the cellular level, and true transformation takes time.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">What is your return policy?</div>
+      <div class="faq-answer">We offer a 30-day satisfaction guarantee. If you are not completely happy with your purchase, contact us for a full refund or exchange. We want you to love your UNKNOWN experience.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">Do you offer international shipping?</div>
+      <div class="faq-answer">Yes, we ship worldwide. Orders within India arrive in 3–5 business days. International orders typically arrive in 7–14 business days. All shipping is carbon-neutral through our partnership with verified reforestation projects.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">Can I subscribe to regular deliveries?</div>
+      <div class="faq-answer">Absolutely. Our subscription service delivers your favorite products every 30, 60, or 90 days with a 15% discount and free shipping. You can pause, modify, or cancel anytime.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">Are your products vegan?</div>
+      <div class="faq-answer">Some of our products contain ethically sourced beeswax and A2 Bilona Ghee (clarified butter from cows). These are not vegan. However, we clearly label all products, and our Gentle Cleanser and certain serums are fully vegan. We are working on expanding our vegan range.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">What is the shelf life of UNKNOWN products?</div>
+      <div class="faq-answer">Because we use natural preservatives and avoid synthetic stabilizers, our products have a shelf life of 12 months unopened and 6 months after opening. We recommend storing them in a cool, dry place away from direct sunlight.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ACCOUNT PAGE ==================== -->
+<div class="page" id="page-account">
+  <div class="account-page">
+    <div class="account-box" id="loginBox">
+      <h2>Welcome Back</h2>
+      <p>Sign in to access your orders, wishlist, and subscription.</p>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="••••••••">
+      </div>
+      <button class="btn btn-primary" onclick="showToast('Signed in successfully')">Sign In</button>
+      <div class="account-toggle">
+        Don't have an account? <a onclick="toggleAccount()">Create one</a>
+      </div>
+    </div>
+    <div class="account-box" id="registerBox" style="display:none">
+      <h2>Join UNKNOWN</h2>
+      <p>Create an account for a personalized skincare experience.</p>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="••••••••">
+      </div>
+      <button class="btn btn-primary" onclick="showToast('Account created. Welcome to UNKNOWN.'); toggleAccount()">Create Account</button>
+      <div class="account-toggle">
+        Already have an account? <a onclick="toggleAccount()">Sign in</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== WISHLIST PAGE ==================== -->
+<div class="page" id="page-wishlist">
+  <div class="shop-header">
+    <span class="section-label">Saved</span>
+    <h1 class="section-title">Your Wishlist</h1>
+    <p class="section-subtitle">Products you have saved for later.</p>
+  </div>
+  <div class="shop-grid">
+    <div class="products-grid" id="wishlistGrid">
+      <div class="product-card" onclick="showProduct('glow-cream')">
+        <div class="product-image">
+          <svg viewBox="0 0 100 100" fill="none"><ellipse cx="50" cy="55" rx="30" ry="35" fill="rgba(196,163,90,0.15)"/><ellipse cx="50" cy="50" rx="28" ry="32" fill="rgba(196,163,90,0.08)" stroke="rgba(196,163,90,0.3)" stroke-width="0.5"/></svg>
+        </div>
+        <div class="product-info">
+          <div class="product-category">Face Care</div>
+          <h3 class="product-name">Glow Face Cream</h3>
+          <p class="product-desc">A2 Bilona Ghee &amp; Saffron infusion for luminous, deeply nourished skin.</p>
+          <div class="product-footer">
+            <span class="product-price">₹4,800</span>
+            <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('Glow Face Cream', 4800)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="footer-logo">UNKNOWN</span>
+      <p class="footer-tagline">Luxury Ayurvedic bioactive skincare. Ancient wisdom, modern science, uncompromising purity.</p>
+      <div class="footer-social">
+        <a>IG</a>
+        <a>FB</a>
+        <a>PT</a>
+        <a>YT</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a onclick="showPage('shop')">All Products</a></li>
+        <li><a onclick="showPage('shop')">Face Care</a></li>
+        <li><a onclick="showPage('shop')">Cleanse</a></li>
+        <li><a onclick="showPage('shop')">Lip Care</a></li>
+        <li><a onclick="showPage('shop')">Gift Sets</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Discover</h4>
+      <ul>
+        <li><a onclick="showPage('about')">Our Story</a></li>
+        <li><a onclick="showPage('ingredients')">Ingredients</a></li>
+        <li><a onclick="showPage('sustainability')">Sustainability</a></li>
+        <li><a onclick="showPage('journal')">Journal</a></li>
+        <li><a onclick="showPage('faq')">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a onclick="showPage('contact')">Contact Us</a></li>
+        <li><a onclick="showPage('account')">My Account</a></li>
+        <li><a onclick="showPage('faq')">Shipping & Returns</a></li>
+        <li><a>Track Order</a></li>
+        <li><a>Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a>hello@unknownskincare.com</a></li>
+        <li><a>+91 141 400 2000</a></li>
+        <li><a>Jaipur, Rajasthan</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 UNKNOWN Skincare. All rights reserved.</p>
+    <p>Crafted with intention in India.</p>
+  </div>
+</footer>
+
+<!-- ==================== JAVASCRIPT ==================== -->
+<script>
+// ======== NAVIGATION SCROLL EFFECT ========
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) { navbar.classList.add('scrolled'); }
+  else { navbar.classList.remove('scrolled'); }
+});
+
+// ======== PARTICLES ========
+const particlesContainer = document.getElementById('particles');
+for (let i = 0; i < 30; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  p.style.left = Math.random() * 100 + '%';
+  p.style.top = Math.random() * 100 + '%';
+  p.style.animationDelay = Math.random() * 6 + 's';
+  p.style.animationDuration = (4 + Math.random() * 4) + 's';
+  particlesContainer.appendChild(p);
+}
+
+// ======== SCROLL ANIMATIONS ========
+const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+  });
+}, observerOptions);
+document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+// ======== PAGE NAVIGATION ========
+function showPage(pageName) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const target = document.getElementById('page-' + pageName);
+  if (target) { target.classList.add('active'); }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (pageName === 'shop') { renderShopProducts(); }
+}
+
+// ======== PRODUCT DETAIL ========
+const products = {
+  'glow-cream': { name: 'Glow Face Cream', category: 'Face Care', price: 4800, desc: 'A luxurious fusion of A2 Bilona Ghee and Kashmiri Saffron, this cream delivers deep cellular nourishment while brightening and evening skin tone. The traditional Bilona method preserves the full spectrum of fat-soluble vitamins and butyric acid, creating a formula that repairs the skin barrier and imparts a natural, lit-from-within glow.' },
+  'face-oil': { name: 'Nourishing Face Oil', category: 'Face Care', price: 3600, desc: 'Prickly Pear Cactus Seed Oil blended with Kumkumadi Tailam and vitamin E. This lightweight yet deeply nourishing oil absorbs quickly to repair, hydrate, and illuminate skin overnight. Wake up to visibly softer, more radiant skin.' },
+  'cleanser': { name: 'Gentle Cleanser', category: 'Cleanse', price: 2400, desc: 'A pH-balanced gel cleanser with Aloe Vera, Rose Extract, and mild coconut-derived surfactants. Removes impurities without stripping the skin's natural moisture barrier. Suitable for all skin types, including sensitive skin.' },
+  'lip-balm': { name: 'Lip Therapy Balm', category: 'Lip Care', price: 1200, desc: 'A rich, protective balm with A2 Bilona Ghee, beeswax, and vitamin E. Heals chapped lips while providing long-lasting hydration and a subtle natural sheen. Free from petroleum and synthetic flavors.' }
+};
+
+function showProduct(productId) {
+  const p = products[productId];
+  if (!p) return;
+  document.getElementById('pdName').textContent = p.name;
+  document.getElementById('pdCategory').textContent = p.category;
+  document.getElementById('pdPrice').textContent = '₹' + p.price.toLocaleString();
+  document.getElementById('pdDesc').textContent = p.desc;
+  showPage('product');
+}
+
+// ======== SHOP PRODUCTS ========
+const allShopProducts = [
+  { id: 'glow-cream', name: 'Glow Face Cream', category: 'face', price: 4800, badge: 'Bestseller', desc: 'A2 Bilona Ghee & Saffron infusion for luminous skin.' },
+  { id: 'face-oil', name: 'Nourishing Face Oil', category: 'face', price: 3600, badge: '', desc: 'Prickly Pear Cactus Seed Oil with Kumkumadi for overnight repair.' },
+  { id: 'cleanser', name: 'Gentle Cleanser', category: 'cleanse', price: 2400, badge: 'New', desc: 'Aloe Vera & Rose Extract for a pure, balanced complexion.' },
+  { id: 'lip-balm', name: 'Lip Therapy Balm', category: 'lip', price: 1200, badge: '', desc: 'Bilona Ghee & Beeswax for supple, protected lips.' },
+  { id: 'body-oil', name: 'Silken Body Oil', category: 'body', price: 2800, badge: '', desc: 'Full-body nourishment with sesame and almond oils.' },
+  { id: 'serum', name: 'Radiance Serum', category: 'face', price: 4200, badge: 'Popular', desc: 'Concentrated saffron and vitamin C for brightening.' },
+  { id: 'mask', name: 'Detox Clay Mask', category: 'cleanse', price: 1800, badge: '', desc: 'Multani mitti and neem for deep purification.' },
+  { id: 'set-glow', name: 'The Glow Ritual Set', category: 'sets', price: 7800, badge: 'Save ₹600', desc: 'Glow Face Cream + Nourishing Face Oil + Gentle Cleanser.' }
+];
+
+function renderShopProducts(filter = 'all') {
+  const grid = document.getElementById('shopProducts');
+  if (!grid) return;
+  const filtered = filter === 'all' ? allShopProducts : allShopProducts.filter(p => p.category === filter);
+  grid.innerHTML = filtered.map(p => `
+    <div class="product-card" onclick="showProduct('${p.id}')">
+      <div class="product-image">
+        <svg viewBox="0 0 100 100" fill="none"><ellipse cx="50" cy="55" rx="30" ry="35" fill="rgba(196,163,90,0.15)"/><ellipse cx="50" cy="50" rx="28" ry="32" fill="rgba(196,163,90,0.08)" stroke="rgba(196,163,90,0.3)" stroke-width="0.5"/></svg>
+        ${p.badge ? `<span class="product-badge">${p.badge}</span>` : ''}
+        <div class="product-wishlist" onclick="event.stopPropagation(); toggleWishlist(this)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-category">${p.category === 'face' ? 'Face Care' : p.category === 'cleanse' ? 'Cleanse' : p.category === 'lip' ? 'Lip Care' : p.category === 'body' ? 'Body Care' : 'Set'}</div>
+        <h3 class="product-name">${p.name}</h3>
+        <p class="product-desc">${p.desc}</p>
+        <div class="product-footer">
+          <span class="product-price">₹${p.price.toLocaleString()}</span>
+          <button class="add-to-cart" onclick="event.stopPropagation(); addToCart('${p.name}', ${p.price})">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function filterProducts(category, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderShopProducts(category);
+}
+
+// ======== CART ========
+let cartTotal = 8400;
+let cartItems = 2;
+
+function toggleCart() {
+  document.getElementById('cartOverlay').classList.toggle('open');
+  document.getElementById('cartDrawer').classList.toggle('open');
+}
+
+function addToCart(name, price) {
+  cartTotal += price;
+  cartItems++;
+  document.getElementById('cartCount').textContent = cartItems;
+  document.getElementById('cartSubtotal').textContent = '₹' + cartTotal.toLocaleString();
+  showToast(name + ' added to cart');
+}
+
+function addToCartFromPD() {
+  const name = document.getElementById('pdName').textContent;
+  const priceText = document.getElementById('pdPrice').textContent;
+  const price = parseInt(priceText.replace(/[^0-9]/g, ''));
+  addToCart(name, price);
+}
+
+function removeFromCart(btn) {
+  const item = btn.closest('.cart-item');
+  const priceText = item.querySelector('.cart-item-price').textContent;
+  const price = parseInt(priceText.replace(/[^0-9]/g, ''));
+  cartTotal -= price;
+  cartItems--;
+  document.getElementById('cartCount').textContent = cartItems;
+  document.getElementById('cartSubtotal').textContent = '₹' + cartTotal.toLocaleString();
+  item.remove();
+}
+
+// ======== WISHLIST ========
+function toggleWishlist(btn) {
+  btn.classList.toggle('active');
+  const svg = btn.querySelector('svg');
+  if (btn.classList.contains('active')) {
+    svg.setAttribute('fill', 'var(--gold)');
+    showToast('Added to wishlist');
+  } else {
+    svg.setAttribute('fill', 'none');
+    showToast('Removed from wishlist');
+  }
+}
+
+// ======== PRODUCT DETAIL TABS ========
+function switchTab(tabName) {
+  document.querySelectorAll('.pd-tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.pd-tab-content').forEach(c => c.style.display = 'none');
+  event.target.classList.add('active');
+  document.getElementById('tab-' + tabName).style.display = 'block';
+}
+
+function selectSize(btn) {
+  document.querySelectorAll('.pd-size').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+let pdQty = 1;
+function changeQty(delta) {
+  pdQty = Math.max(1, pdQty + delta);
+  document.getElementById('pdQty').textContent = pdQty;
+}
+
+// ======== REVIEWS CAROUSEL ========
+const reviews = [
+  { text: "I've tried every luxury brand on the market. UNKNOWN is the first that made me stop searching. The Glow Face Cream has transformed my skin in ways I didn't think possible — luminous, balanced, and genuinely nourished.", author: "Ananya Sharma", location: "Mumbai, India" },
+  { text: "As a dermatologist, I'm extremely particular about what I recommend to patients. UNKNOWN's ingredient transparency and clinical testing standards are exceptional. The science behind their formulations is genuinely impressive.", author: "Dr. Vikram Patel", location: "Delhi, India" },
+  { text: "The Nourishing Face Oil is pure magic. I wake up with skin that looks like I've had a facial. The texture is divine — not greasy at all, just deeply hydrating. This is my third bottle.", author: "Sarah Chen", location: "Singapore" },
+  { text: "I was skeptical about Ayurvedic skincare until I tried UNKNOWN. The difference in my skin's texture and glow after just three weeks was undeniable. This is luxury skincare with a soul.", author: "Emma Laurent", location: "Paris, France" }
+];
+let currentReview = 0;
+
+function showReview(index) {
+  currentReview = index;
+  document.getElementById('reviewText').textContent = '"' + reviews[index].text + '"';
+  document.getElementById('reviewAuthor').textContent = reviews[index].author;
+  document.querySelectorAll('.review-dot').forEach((d, i) => d.classList.toggle('active', i === index));
+}
+
+// ======== BEFORE/AFTER SLIDER ========
+const baSlider = document.getElementById('baSlider');
+const baAfter = document.getElementById('baAfter');
+const baHandle = document.getElementById('baHandle');
+let isDragging = false;
+
+baSlider.addEventListener('mousedown', () => isDragging = true);
+window.addEventListener('mouseup', () => isDragging = false);
+window.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  const rect = baSlider.getBoundingClientRect();
+  let x = e.clientX - rect.left;
+  x = Math.max(0, Math.min(x, rect.width));
+  const pct = (x / rect.width) * 100;
+  baAfter.style.width = pct + '%';
+  baHandle.style.left = pct + '%';
+});
+
+// Touch support
+baSlider.addEventListener('touchstart', () => isDragging = true);
+window.addEventListener('touchend', () => isDragging = false);
+window.addEventListener('touchmove', (e) => {
+  if (!isDragging) return;
+  const rect = baSlider.getBoundingClientRect();
+  let x = e.touches[0].clientX - rect.left;
+  x = Math.max(0, Math.min(x, rect.width));
+  const pct = (x / rect.width) * 100;
+  baAfter.style.width = pct + '%';
+  baHandle.style.left = pct + '%';
+});
+
+// ======== FAQ TOGGLE ========
+function toggleFaq(el) {
+  const item = el.closest('.faq-item');
+  item.classList.toggle('open');
+}
+
+// ======== MOBILE MENU ========
+function toggleMobileMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// ======== ACCOUNT TOGGLE ========
+function toggleAccount() {
+  const loginBox = document.getElementById('loginBox');
+  const registerBox = document.getElementById('registerBox');
+  if (loginBox.style.display === 'none') {
+    loginBox.style.display = 'block';
+    registerBox.style.display = 'none';
+  } else {
+    loginBox.style.display = 'none';
+    registerBox.style.display = 'block';
+  }
+}
+
+// ======== TOAST ========
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  toast.textContent = message;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+// ======== INIT ========
+renderShopProducts();
+</script>
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UNKNOWN Skincare",
+  "url": "https://unknownskincare.com",
+  "logo": "https://unknownskincare.com/logo.png",
+  "description": "Luxury Ayurvedic bioactive skincare powered by A2 Bilona Ghee and Prickly Pear Cactus.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12 Jawahar Lal Nehru Marg",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "302015",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-141-400-2000",
+    "contactType": "customer service"
+  }
+}
+</script>
+
+</body>
+</html>
